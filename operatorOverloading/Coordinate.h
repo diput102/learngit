@@ -6,10 +6,13 @@ using namespace std;
 class Coordinate
 {
 public:
+    /*Coordinate operator+(Coordinate &c);*/
+	//friend Coordinate operator+(Coordinate c1, Coordinate c2);
+	/*friend ostream &operator<<(ostream &output, Coordinate &coor);*/
 	Coordinate(int x,int y);
-	//Coordinate &operator-();
 	int getX();
 	int getY();
+	//Coordinate &operator-();
 	Coordinate operator++(int);
 	Coordinate &operator++();
 	//friend Coordinate &operator-(Coordinate &c);
